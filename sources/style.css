@@ -117,3 +117,6 @@ i.fas {
   transition: all 150ms ease-out;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+.footer {
+  font-size: 13px;
+}
