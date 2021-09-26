@@ -1,0 +1,119 @@
+body {
+  font-family: "Love Ya Like A Sister", cursive;
+  margin: 50px auto;
+  text-align: center;
+  border: 3px solid rgb(24, 69, 153);
+  border-radius: 60px;
+  padding: 20px;
+  max-width: 600px;
+}
+.cities {
+  margin-bottom: 0 auto;
+  line-height: 30px;
+}
+.cities:hover {
+  cursor: pointer;
+}
+.search {
+  display: block;
+  margin-top: 0 auto;
+  text-align: center;
+  border-radius: 50px;
+  padding: 20px;
+}
+input.box {
+  border-radius: 30px;
+  border: 3px solid rgb(24, 69, 153);
+}
+input.button {
+  border-radius: 30px;
+  border: 3px solid rgb(24, 69, 153);
+  background-color: rgb(158, 187, 240);
+  transition: all 150ms ease-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+  cursor: pointer;
+  background: rgb(24, 69, 153);
+  color: rgb(158, 187, 240);
+}
+
+li {
+  list-style: none;
+  margin: 15px 10px;
+  text-align: left;
+}
+.today {
+  margin: 0 10px;
+  line-height: 26px;
+  font-size: 30px;
+  padding: 0;
+}
+
+.measure {
+  margin-top: -3px;
+  margin-left: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+}
+a {
+  text-decoration: none;
+  margin-left: -7px;
+}
+
+.dateDetails {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0px 10px;
+  padding: 0;
+  line-height: 20px;
+  text-align: left;
+}
+
+.weatherDetails {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 0;
+  line-height: 20px;
+  text-align: left;
+}
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0px 10px;
+  padding: 0;
+  line-height: 20px;
+  text-align: left;
+}
+hr {
+  color: rgb(158, 187, 240);
+  height: 10px;
+  border: 2px solid rgb(158, 187, 240);
+  margin-bottom: 30px;
+}
+.days {
+  line-height: 30px;
+}
+i.far {
+  color: rgba(184, 170, 45, 0.973);
+}
+i.fas {
+  color: rgb(120, 167, 167);
+}
+#current-location-button {
+  color: black;
+  padding: 8px;
+  transition: all 150ms ease-out;
+  font-size: 15px;
+  margin-top: 5px;
+}
+#current-location-button:hover {
+  cursor: pointer;
+  border-radius: 30px;
+  border: 2px solid rgb(24, 69, 153);
+  transition: all 150ms ease-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
