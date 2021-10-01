@@ -19,115 +19,86 @@
 
 <body>
     <div class="container">
-        <form class="search" id="search-form">
-            <div class="row">
-                <div class="col-8">
-                    <input type="search" placeholder="   Enter a city..." autofocus="on" autocomplete="off"
-                        class="form-control shadow-sm box" id="city-value">
+        <div class="wrapper">
+            <form class="search" id="search-form">
+                <div class="row">
+                    <div class="col-8">
+                        <input type="search" placeholder="Enter a city..." autofocus="on" autocomplete="off"
+                            class="form-control shadow-sm searchBox" id="city-value">
+
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="search" class="form-control submit">
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-location-arrow" id="current-location-button"></i>
+                    </div>
+
+            </form>
+            <h1>
+                <div class="row">
+                    <div class="col-4">
+                        <ul class="today">
+                            <li id="city"> </li>
+                            <li><span class="degree"></span>
+                                <span class="units">
+                                    <a id="celsius" href="#" class="active">°C|</a><a id="fahrenheit" href="#">°F</a>
+                                </span>
+                            </li>
+                            <li class="description"></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <img id="icon" src="" alt="" />
+                    </div>
+
+                    <div class="col-4">
+                        <ul class="weatherDetails">
+                            <li>Humidity:
+                                <span class="humidity"></span>%
+                            </li>
+                            <li>Wind:
+                                </br>
+                                <span class="wind"></span> km/h
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <input type="submit" value="search" class="form-control button">
+            </h1>
+
+
+            <hr />
+
+            <div class="row" id="forecastPreview">
+                <div class="col-2">
+                    Wed
+                    <div>
+                        <i class="far fa-sun" id="forecast-icon"></i>
+                    </div>
+                    <div class="maxMin">
+                        <span class="max">26°</span><span class="min">/16°</span>
+                    </div>
+
                 </div>
-                <div class="col-1">
-                    <i class="fas fa-location-arrow" id="current-location-button"></i>
             </div>
-            
-        </form>
-        <h1>
-            
-            <div class="row">
-                <div class="col-4">
-                    <ul class="today">
-                        <li id="new-city"> </li>
-                        <li><span class="degree"></span>
-                            <span class="measure">
-                            <a class="celsius" href="#" >°C |</a>
-                            <a class="farenheit" href="#" >°F</a>
-                        </span> </li>
-                        <li class="description"></li>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <ul class="dateDetails">
-                        <li id="which-day">  </li>
-                        <li id="which-date"></li>
-                        <li id="what-time"> </li>
-                    </ul>
-
-                </div>
-
-
-                <div class="col-4">
-                    <ul class="weatherDetails">
-                        <li class="humidity"></li>
-                        <li class="wind"></li>
-
-                    </ul>
-                </div>
-
-            </div>
-
-
-        </h1>
-    </div>
-    <p class="quote">
-        It is a nice day!
-    </p>
-    <hr />
-    <p>
-    <div class="row days">
-        <div class="col-2">
-            Wed
-            <br />
-            26/20
-            <br />
-            <i class="far fa-sun"></i>
-        </div>
-        <div class="col-2">
-            Thu
-            <br />
-            30/21
-            <br />
-            <i class="far fa-sun"></i>
-        </div>
-        <div class="col-2">
-            Fri
-            <br />
-            23/18
-            <br />
-            <i class="fas fa-cloud-sun"></i>
-        </div>
-        <div class="col-2">
-            Sat
-            <br />
-            24/19
-            <br />
-            <i class="fas fa-cloud-sun"></i>
-        </div>
-        <div class="col-2">
-            Sun
-            <br />
-            27/20
-            <br />
-            <i class="far fa-sun"></i>
-
-        </div>
-        <div class="col-2">
-            Mon
-            <br />
-            22/16
-            <br />
-            <i class="fas fa-cloud-sun"></i>
+            <p class="lastUpdated">
+                Last updated: <span id="date-time"></span>
+            </p>
         </div>
     </div>
-    </p>
-    <footer class="footer">    
-        <a href="https://github.com/Mehrnaz-zand/Weather-app">
-            Open source code
+
+    <footer id="footer">
+        This project was coded by Mehrnaz Zand and is
+        <a href="https://github.com/Mehrnaz-zand/Vanilla-weather-app" target="_blank" class="link">
+            open-sourced on GitHub
         </a>
-        by Mehrnaz Zandrahimi
+        and
+        <a href="https://sharp-lamport-14530f.netlify.app/" target="_blank" class="link">
+            hosted on Netlify
+        </a>
     </footer>
-<script src="sources/app.js"></script>
+
+    <script src="sources/app.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,14 @@
 body {
   font-family: "Love Ya Like A Sister", cursive;
   margin: 50px auto;
-  text-align: center;
-  border: 3px solid rgb(24, 69, 153);
-  border-radius: 60px;
   padding: 20px;
   max-width: 600px;
 }
-.cities {
-  margin-bottom: 0 auto;
-  line-height: 30px;
-}
-.cities:hover {
-  cursor: pointer;
+.wrapper {
+  border: 3px solid rgb(24, 69, 153);
+  border-radius: 60px;
+  padding: 20px;
+  padding-bottom: 10px;
 }
 .search {
   display: block;
@@ -20,19 +16,20 @@ body {
   text-align: center;
   border-radius: 50px;
   padding: 20px;
+  padding-bottom: 0;
 }
-input.box {
+input.searchBox {
   border-radius: 30px;
   border: 3px solid rgb(24, 69, 153);
 }
-input.button {
+input.submit {
   border-radius: 30px;
   border: 3px solid rgb(24, 69, 153);
   background-color: rgb(158, 187, 240);
   transition: all 150ms ease-out;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.button:hover {
+.submit:hover {
   cursor: pointer;
   background: rgb(24, 69, 153);
   color: rgb(158, 187, 240);
@@ -50,26 +47,31 @@ li {
   padding: 0;
 }
 
-.measure {
+.units {
   margin-top: -3px;
   margin-left: 7px;
-  text-decoration: none;
   font-size: 14px;
   font-weight: 600;
   position: absolute;
 }
 a {
   text-decoration: none;
-  margin-left: -7px;
 }
 
-.dateDetails {
-  font-weight: 400;
-  font-size: 20px;
-  margin: 0px 10px;
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  color: black;
+}
+.lastUpdated {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
   padding: 0;
-  line-height: 20px;
-  text-align: left;
 }
 
 .weatherDetails {
@@ -92,10 +94,14 @@ hr {
   color: rgb(158, 187, 240);
   height: 10px;
   border: 2px solid rgb(158, 187, 240);
-  margin-bottom: 30px;
+  margin: 20px auto;
 }
-.days {
-  line-height: 30px;
+.maxMin {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.min {
+  opacity: 0.7;
 }
 i.far {
   color: rgba(184, 170, 45, 0.973);
@@ -117,6 +123,7 @@ i.fas {
   transition: all 150ms ease-out;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.footer {
-  font-size: 13px;
+#footer {
+  font-size: 11px;
+  text-align: center;
 }
