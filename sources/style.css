@@ -42,6 +42,13 @@ input.submit {
   color: #e7e7de;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+.submit:focus {
+  border-radius: 30px;
+  border: 3px solid #0f3057;
+  box-shadow: none;
+  background-color: #eeeeee;
+  color: #0f3057;
+}
 
 li {
   list-style: none;
@@ -118,7 +125,7 @@ hr {
 #current-location-button:hover {
   cursor: pointer;
   border-radius: 30px;
-  border: 2px solid #0f3057;
+  border: 0.5px solid #0f3057;
   transition: all 150ms ease-out;
   box-shadow: 3px 3px 3px #0f3057;
 }
