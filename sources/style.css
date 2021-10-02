@@ -3,12 +3,14 @@ body {
   margin: 50px auto;
   padding: 20px;
   max-width: 600px;
+  color: #e7e7de;
 }
 .wrapper {
-  border: 3px solid rgb(24, 69, 153);
+  border: 3px solid #0f3057;
   border-radius: 60px;
   padding: 20px;
   padding-bottom: 10px;
+  background-color: #008891;
 }
 .search {
   display: block;
@@ -20,19 +22,25 @@ body {
 }
 input.searchBox {
   border-radius: 30px;
-  border: 3px solid rgb(24, 69, 153);
+  border: 3px solid #0f3057;
+  background-color: #e7e7de;
+}
+input.searchBox:focus {
+  border: 3px solid #0f3057;
+  background-color: #eeeeee;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 input.submit {
   border-radius: 30px;
-  border: 3px solid rgb(24, 69, 153);
-  background-color: rgb(158, 187, 240);
+  border: 3px solid #0f3057;
+  background-color: #e7e7de;
   transition: all 150ms ease-out;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .submit:hover {
   cursor: pointer;
-  background: rgb(24, 69, 153);
-  color: rgb(158, 187, 240);
+  background: #0f3057;
+  color: #e7e7de;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 li {
@@ -47,7 +55,7 @@ li {
   padding: 0;
 }
 
-.units {
+.unit {
   margin-top: -3px;
   margin-left: 7px;
   font-size: 14px;
@@ -58,14 +66,6 @@ a {
   text-decoration: none;
 }
 
-.active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-.active:hover {
-  color: black;
-}
 .lastUpdated {
   font-size: 11px;
   text-align: center;
@@ -84,18 +84,19 @@ a {
 }
 .description {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0px 10px;
   padding: 0;
   line-height: 20px;
   text-align: left;
 }
 hr {
-  color: rgb(158, 187, 240);
+  color: #0f3057;
   height: 10px;
-  border: 2px solid rgb(158, 187, 240);
+  border: 2px solid #0f3057;
   margin: 20px auto;
 }
+
 .maxMin {
   font-size: 13px;
   margin-top: 5px;
@@ -103,27 +104,26 @@ hr {
 .min {
   opacity: 0.7;
 }
-i.far {
-  color: rgba(184, 170, 45, 0.973);
-}
-i.fas {
-  color: rgb(120, 167, 167);
-}
+
 #current-location-button {
-  color: black;
+  color: #0f3057;
   padding: 8px;
   transition: all 150ms ease-out;
   font-size: 15px;
   margin-top: 5px;
+  margin-left: -20px;
+  margin-bottom: 20px;
 }
+
 #current-location-button:hover {
   cursor: pointer;
   border-radius: 30px;
-  border: 2px solid rgb(24, 69, 153);
+  border: 2px solid #0f3057;
   transition: all 150ms ease-out;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px #0f3057;
 }
 #footer {
   font-size: 11px;
   text-align: center;
+  color: #0f3057;
 }
