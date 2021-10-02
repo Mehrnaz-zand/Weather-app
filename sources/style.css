@@ -46,7 +46,7 @@ input.submit {
   border-radius: 30px;
   border: 3px solid #0f3057;
   box-shadow: none;
-  background-color: #eeeeee;
+  background-color: #e7e7de;
   color: #0f3057;
 }
 
@@ -110,16 +110,6 @@ hr {
 }
 .min {
   opacity: 0.7;
-}
-
-#current-location-button {
-  color: #0f3057;
-  padding: 8px;
-  transition: all 150ms ease-out;
-  font-size: 15px;
-  margin-top: 5px;
-  margin-left: -20px;
-  margin-bottom: 20px;
 }
 
 #footer {
