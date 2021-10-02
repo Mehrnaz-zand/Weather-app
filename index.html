@@ -23,7 +23,7 @@
             <form class="search" id="search-form">
                 <div class="row">
                     <div class="col-8">
-                        <input type="search" placeholder="Enter a city..." autofocus="on" autocomplete="off"
+                        <input type="search" placeholder="Enter a city..."  autocomplete="off"
                             class="form-control shadow-sm searchBox" id="city-value">
 
                     </div>
@@ -39,11 +39,12 @@
                 <div class="row">
                     <div class="col-4">
                         <ul class="today">
-                            <li id="city"> </li>
+                            <li id="city"></li>
                             <li><span class="degree"></span>
-                                <span class="units">
-                                    <a id="celsius" href="#" class="active">°C|</a><a id="fahrenheit" href="#">°F</a>
+                                <span class="unit" id="celsius">
+                                °C
                                 </span>
+                                
                             </li>
                             <li class="description"></li>
                         </ul>
@@ -68,19 +69,11 @@
 
 
             <hr />
+            <div id="forecastPreview">
 
-            <div class="row" id="forecastPreview">
-                <div class="col-2">
-                    Wed
-                    <div>
-                        <i class="far fa-sun" id="forecast-icon"></i>
-                    </div>
-                    <div class="maxMin">
-                        <span class="max">26°</span><span class="min">/16°</span>
-                    </div>
-
-                </div>
             </div>
+
+            
             <p class="lastUpdated">
                 Last updated: <span id="date-time"></span>
             </p>
