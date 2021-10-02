@@ -122,13 +122,6 @@ hr {
   margin-bottom: 20px;
 }
 
-#current-location-button:hover {
-  cursor: pointer;
-  border-radius: 30px;
-  border: 0.5px solid #0f3057;
-  transition: all 150ms ease-out;
-  box-shadow: 3px 3px 3px #0f3057;
-}
 #footer {
   font-size: 11px;
   text-align: center;
