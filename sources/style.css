@@ -1,16 +1,25 @@
+:root {
+  --darkest-color: #0f3057;
+  --dark-color: #00587a;
+  --middle-color: #008891;
+  --light-color: #e7e7de;
+  --border: 3px solid #0f3057;
+  --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 body {
   font-family: "Love Ya Like A Sister", cursive;
   margin: 50px auto;
   padding: 20px;
   max-width: 600px;
-  color: #e7e7de;
+  color: var(--light-color);
 }
 .wrapper {
-  border: 3px solid #0f3057;
+  border: var(--border);
   border-radius: 60px;
   padding: 20px;
   padding-bottom: 10px;
-  background-color: #008891;
+  background-color: var(--middle-color);
 }
 .search {
   display: block;
@@ -22,32 +31,32 @@ body {
 }
 input.searchBox {
   border-radius: 30px;
-  border: 3px solid #0f3057;
-  background-color: #e7e7de;
+  border: var(--border);
+  background-color: var(--light-color);
 }
 input.searchBox:focus {
-  border: 3px solid #0f3057;
+  border: 3px solid var(--darkest-color);
   background-color: #eeeeee;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 input.submit {
   border-radius: 30px;
-  border: 3px solid #0f3057;
-  background-color: #e7e7de;
+  border: var(--border);
+  background-color: var(--light-color);
   transition: all 150ms ease-out;
 }
 .submit:hover {
   cursor: pointer;
-  background: #0f3057;
-  color: #e7e7de;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background: var(--darkest-color);
+  color: var(--light-color);
+  box-shadow: var(--box-shadow);
 }
 .submit:focus {
   border-radius: 30px;
-  border: 3px solid #0f3057;
+  border: var(--border);
   box-shadow: none;
-  background-color: #e7e7de;
-  color: #0f3057;
+  background-color: var(--light-color);
+  color: var(--darkest-color);
 }
 
 li {
@@ -98,9 +107,9 @@ a {
   text-align: left;
 }
 hr {
-  color: #0f3057;
+  color: var(--darkest-color);
   height: 10px;
-  border: 2px solid #0f3057;
+  border: 2px solid var(--darkest-color);
   margin: 20px auto;
 }
 
@@ -115,5 +124,5 @@ hr {
 #footer {
   font-size: 11px;
   text-align: center;
-  color: #0f3057;
+  color: var(--darkest-color);
 }
