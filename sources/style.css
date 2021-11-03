@@ -149,7 +149,7 @@ hr {
 
   .description {
     margin: 0 -4px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .lastUpdated {
@@ -162,7 +162,7 @@ hr {
     font-size: 25px;
   }
   #celsius {
-    font-size: 11px;
+    font-size: 14px;
   }
   #days {
     font-size: 14px;
@@ -170,6 +170,6 @@ hr {
   }
 
   #footer {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
