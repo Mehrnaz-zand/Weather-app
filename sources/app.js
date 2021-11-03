@@ -46,7 +46,9 @@ function dispalyForecast(response){
       
     forecastHTML = forecastHTML + `
                 <div class="col-2">
+                <div id="days">
                     ${getForecastDay(forecast.dt)}
+                    </div>
                     <div>
                         <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="" width="42" id="forecast-icon">
                     </div>
@@ -92,14 +94,6 @@ function handleSubmit(event){
   let city = document.querySelector("#city-value").value;
   search(city);
  }
-
-
-
-
- 
-
-
-
 
 
 

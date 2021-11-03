@@ -126,3 +126,50 @@ hr {
   text-align: center;
   color: var(--darkest-color);
 }
+@media (max-width: 567px) {
+  li {
+    margin: 7px -6px;
+    font-size: 15px;
+  }
+  img {
+    margin-left: -14px;
+  }
+  input.searchBox {
+    font-size: 11px;
+    padding: 8px;
+  }
+  input.submit {
+    font-size: 11px;
+    padding: 8px;
+  }
+
+  span.degree {
+    font-size: 20px;
+  }
+
+  .description {
+    margin: 0 -4px;
+    font-size: 12px;
+  }
+
+  .lastUpdated {
+    margin-top: 20px;
+  }
+  .maxMin {
+    font-size: 12px;
+  }
+  #city {
+    font-size: 25px;
+  }
+  #celsius {
+    font-size: 11px;
+  }
+  #days {
+    font-size: 14px;
+    margin-left: -8px;
+  }
+
+  #footer {
+    font-size: 9px;
+  }
+}
