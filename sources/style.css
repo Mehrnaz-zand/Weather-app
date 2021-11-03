@@ -47,8 +47,9 @@ input.submit {
 }
 .submit:hover {
   cursor: pointer;
-  background: var(--darkest-color);
+  background: var(--dark-color);
   color: var(--light-color);
+  border-color: var(--light-color);
   box-shadow: var(--box-shadow);
 }
 .submit:focus {
