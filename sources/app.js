@@ -67,7 +67,10 @@ function dispalyForecast(response){
 function getForecast(coordinates){
     let apiKey =  `19351561bdce0a99202ae9e49984792f`
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(dispalyForecast);
+    axios.get(apiUrl).then(dispalyForecast).catch(function(error){
+        alert("Oops, please enter a valid city!🤕")
+    
+    });
 }
 function showTemperature (response){
    celsiusTemperature = response.data.list[0].main.temp;
@@ -85,7 +88,10 @@ function showTemperature (response){
 function search(city){
   let apiKey= "19351561bdce0a99202ae9e49984792f";
   let apiUrl = `https://api.openweathermap.org/data/2.5/find?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then(showTemperature).catch(function(error){
+        alert("Oops, please enter a valid city name!🤕")
+    
+    });;
 
 }
 
